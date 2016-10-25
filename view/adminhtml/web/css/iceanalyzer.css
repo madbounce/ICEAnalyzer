@@ -1,0 +1,15 @@
+#row_iceshop_iceanalyzer_server_info_path_url, .empty_field {
+     display: none;
+ }
+
+.iceanalyzer_green {
+    color: #05b12e;
+}
+
+.iceanalyzer_red {
+    color: #ff001a;
+}
+
+.iceanalyzer_problems_digest {
+    display: none;
+}

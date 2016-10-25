@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="iceshop" translate="label" sortOrder="10">
+            <label>ICEShop</label>
+        </tab>
+        <section id="iceshop_iceanalyzer" translate="label" type="text" sortOrder="10" showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>ICEAnalyzer</label>
+            <tab>iceshop</tab>
+            <resource>ICEShop_ICEAnalyzer::iceshop_iceanalyzer</resource>
+            <group id="problems_digest" translate="label" type="text" sortOrder="9" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <fieldset_css>iceanalyzer_problems_digest</fieldset_css>
+                <label>Problems digest</label>
+                <field id="problems_digest" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <frontend_class>empty_field</frontend_class>
+                </field>
+            </group>
+            <group id="server_info" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <fieldset_css>iceanalyzer_group</fieldset_css>
+                <label>Server Info</label>
+                <field id="path_url" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Path Url</label>
+                    <source_model>ICEShop\ICEAnalyzer\Model\Source\Checksystem</source_model>
+                </field>
+            </group>
+            <group id="system_requirements" translate="label" type="text" sortOrder="20" showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <label>System Requirements</label>
+                <field id="system_requirements_field" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <frontend_class>empty_field</frontend_class>
+                </field>
+            </group>
+            <group id="magento_info" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>Magento Info</label>
+                <field id="magento_info_field" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <frontend_class>empty_field</frontend_class>
+                </field>
+            </group>
+            <group id="magento_core_api_info" translate="label" type="text" sortOrder="40" showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <label>Magento Core API Info</label>
+                <field id="magento_core_api_info_field" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <frontend_class>empty_field</frontend_class>
+                </field>
+            </group>
+            <group id="php_info" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>PHP Info</label>
+                <field id="php_info_field" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <frontend_class>empty_field</frontend_class>
+                </field>
+            </group>
+            <group id="mysql_info" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>MySQL Info</label>
+                <field id="mysql_info_field" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <frontend_class>empty_field</frontend_class>
+                </field>
+            </group>
+            <group id="performance_tests" translate="label" type="text" sortOrder="61" showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <label>Performance tests</label>
+                <field id="performance_tests_field" translate="label" type="select" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <source_model>ICEShop\ICEAnalyzer\Model\Source\Performance</source_model>
+                    <frontend_class>empty_field</frontend_class>
+                </field>
+            </group>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>General</label>
+                <!--<field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable ICEAnalyzer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        Comment for `Enable ICEAnalyzer` setting.
+                    </comment>
+                </field>
+                <field id="block_label" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Block Label</label>
+                </field>
+                <field id="text_align" translate="label" type="select" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Text Align</label>
+                    <source_model>ICEShop\ICEAnalyzer\Model\Source\Align</source_model>
+                </field>-->
+                <!--<field id="path_url" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Path Url</label>
+                    <source_model>ICEShop\ICEAnalyzer\Model\Source\Checksystem</source_model>
+                </field>-->
+            </group>
+        </section>
+    </system>
+</config>
